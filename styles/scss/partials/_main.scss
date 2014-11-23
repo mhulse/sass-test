@@ -1,0 +1,981 @@
+//----------------------------------------------------------------------
+// Global:
+//----------------------------------------------------------------------
+
+body {
+	// Spice it up a little:
+	background: lighten($color1, 40%) {
+		image: linear-gradient(to bottom,
+			lighten($color1, 50%) 120px,
+			lighten($color1, 20%) 120px,
+			lighten($color1, 20%) 160px,
+			transparent 150px
+		);
+		repeat: no-repeat;
+	}
+	color: rgba($raven, .75);
+}
+
+a {
+	
+	&,
+	&:link, // Redundant, but needed to override previous in cascade.
+	&:visited {
+		color: $color2;
+		text-decoration: none;
+	}
+	&:visited:hover,
+	&:focus,
+	&:focus:hover,
+	&:hover,
+	&:active {
+		color: $color2;
+		text-decoration: underline;
+	}
+	
+}
+
+//----------------------------------------------------------------------
+// Containers:
+//----------------------------------------------------------------------
+
+.builder-container-outer-wrapper {
+	border: 0;
+	background: none;
+	margin: 25px auto;
+	box-shadow: none;
+}
+
+// Get rid of those rogue/empty `href`s:
+.builder-module-outer-wrapper + a { display: none; }
+
+.builder-module { background: none; }
+
+.loop,
+.builder-module-content .hentry { margin: 0; }
+
+//----------------------------------------------------------------------
+// Header:
+//----------------------------------------------------------------------
+
+.builder-module-header {
+	
+	.site-title {
+		
+		a {
+			
+			font-size: 30px;
+			line-height: 1;
+			text-transform: lowercase;
+			letter-spacing: .03em;
+			color: darken($color1, 30%);
+			
+			&,
+			&:visited { text-decoration: none; }
+			&:visited:hover,
+			&:focus,
+			&:focus:hover,
+			&:hover,
+			&:active { color: #263238; }
+			
+		}
+		
+	}
+	
+}
+
+.site-tagline {
+	
+	font: {
+		size: 16px;
+		weight: normal;
+	}
+	letter-spacing: .05em;
+	margin-top: 3px;
+	
+	a {
+		
+		&,
+		&:visited {
+			text-decoration: none;
+			color: rgba(0, 0, 0, .54);
+		}
+		&:visited:hover,
+		&:focus,
+		&:focus:hover,
+		&:hover,
+		&:active {
+			font-size: inherit;
+			line-height: inherit;
+			color: #000;
+		}
+		
+	}
+	
+}
+
+.builder-module-before-navigation .builder-module-block { margin: 0 0 25px; }
+
+//----------------------------------------------------------------------
+// Navigation:
+//----------------------------------------------------------------------
+
+.builder-module-navigation {
+	
+	border: {
+		width: 0 0 3px;
+		style: solid;
+		color: darken($color1, 30%);
+		radius: 3px 3px 0 0;
+	}
+	background: $color1;
+	background: linear-gradient(to bottom, $color1 0, darken($color1, 5%) 100%);
+	margin: 0 !important;
+	padding: 0 !important;
+	overflow: hidden;
+	box-shadow: 0 2px 3px rgba(0, 0, 0, .25);
+	overflow: hidden;
+	
+	&::before,
+	&::after {
+		border: none {
+			radius: 0;
+		}
+	}
+	
+	ul.menu {
+		
+		> li {
+			
+			border: 0;
+			
+			a {
+				
+				font: {
+					size: 16px;
+					weight: normal;
+				}
+				letter-spacing: .05em;
+				text-shadow: 0 1px 1px #37474f;
+				color: rgba(255, 255, 255, .8);
+				border: 0;
+				background: linear-gradient(to top, darken($color1, 15%) 0, darken($color1, 10%) 50%, transparent 50%);
+				background-size: 100% 200%;
+				padding: 5px 15px;
+				box-shadow: none;
+				-webkit-transition: background-position 150ms ease-in, color 250ms linear;
+				   -moz-transition: background-position 150ms ease-in, color 250ms linear;
+				    -ms-transition: background-position 150ms ease-in, color 250ms linear;
+				     -o-transition: background-position 150ms ease-in, color 250ms linear;
+				        transition: background-position 150ms ease-in, color 250ms linear;
+				
+				&,
+				&:visited { text-decoration: none; }
+				&:visited:hover,
+				&:focus,
+				&:focus:hover,
+				&:hover,
+				&:active {
+					color: #fff;
+					background: {
+						position: 0 100%;
+						color: transparent;
+					}
+				}
+				
+			}
+			
+		}
+		
+	}
+	
+}
+
+//----------------------------------------------------------------------
+// Main content area:
+//----------------------------------------------------------------------
+
+// Override so I can position the sharing icons (I don't think this is needed here):
+.builder-module-outer-wrapper { overflow: visible !important; } // The immidiate child has a clearfix on it anyway.
+
+.builder-module-middle-outer-wrapper {
+	background: #fff;
+	background-image: linear-gradient(to left, lighten($color1, 30%) 320px, transparent 320px);
+}
+
+//----------------------------------------------------------------------
+// Mainbar:
+//----------------------------------------------------------------------
+
+.entry-content { margin: 0; }
+
+// Considering there's a `clearfix`, I don't think this is needed:
+.builder-module-content .builder-module-element { overflow: visible; }
+
+#IDX-details-row-content {
+	
+	margin-bottom: 25px;
+	
+	&,
+	& * {
+		-webkit-box-sizing: border-box;
+		   -moz-box-sizing: border-box;
+		        box-sizing: border-box;
+	}
+	
+}
+
+//----------------------------------------------------------------------
+// Sub navigation:
+//----------------------------------------------------------------------
+
+// Hide empty `div`:
+#IDX-lineBreak-detailsTopNav { display: none; }
+
+//----------------------------------------------------------------------
+// Detail photo area:
+//----------------------------------------------------------------------
+
+#IDX-detailsWrapper {
+	
+	position: relative;
+	
+	.IDX-fieldContainer { float: none; } // This wasn't needed here.
+	
+}
+
+.IDX-topLinks {
+	
+	.IDX-topLink { display: block; }
+	
+	// Hide empty `div`:
+	#IDX-nextLastButtons { display: none; }
+	
+	// This belongs in the quick search area:
+	#IDX-detailsLinkNew { display: none; }
+	
+	// Put in better location:
+	#IDX-detailsLinkSave {
+		
+		margin: 0;
+		position: absolute;
+		top: 1px;
+		right: 1px;
+		z-index: 10;
+		
+		a,
+		span {
+			font-size: 10px;
+			text-transform: uppercase;
+			letter-spacing: .08em;
+			line-height: 1;
+			color: rgba($milk, .90);
+			background: rgba($color2, .75);
+			padding: 3px 5px;
+			display: block;
+			border-radius: 0 0 0 3px;
+		}
+		
+		a {
+			
+			&,
+			&:link,
+			&:visited,
+			&:visited:hover,
+			&:focus,
+			&:focus:hover,
+			&:hover,
+			&:active { text-decoration: none; }
+			
+		}
+		
+	}
+	
+	// No longer needed:
+	.IDX-clear { display: none; }
+	
+}
+
+#IDX-detailsPropertyPhoto {
+	border: 1px solid darken($color1, 30%);
+	width: 100%;
+	margin: 0;
+	float: none;
+}
+
+#IDX-primaryPhoto {
+	
+	position: relative;
+	
+	&:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background-image: linear-gradient(to top, rgba(darken($color1, 30%), .9) 0, transparent 50%);
+		//opacity: .6;
+		pointer-events: none
+	}
+	
+}
+
+#IDX-detailsPhoto { display: block; }
+
+// Overlay:
+#IDX-detailsAddress,
+#IDX-detailsField-listingPrice,
+#IDX-basicInfo,
+#IDX-detailsBankRateTool,
+#IDX-listingID,
+#IDX-detailsGalleryLink {
+	font-weight: normal;
+	text-align: left;
+	text-shadow: 0 1px 2px $raven;
+	letter-spacing: .05em;
+	color: rgba($milk, .8);
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	z-index: 20;
+}
+
+// Overlay, left:
+#IDX-detailsAddress,
+#IDX-basicInfo,
+#IDX-detailsGalleryLink {
+	width: 65%;
+	left: 10px;
+}
+
+// Overlay, right:
+#IDX-detailsField-listingPrice,
+#IDX-listingID,
+#IDX-detailsBankRateTool {
+	text-align: right;
+	width: 35%;
+	right: 10px;
+}
+
+// Address and price:
+#IDX-detailsField-listingPrice,
+#IDX-detailsAddress {
+	color: $milk;
+	font-size: 20px;
+	line-height: 22px;
+	top: 280px;
+}
+#IDX-detailsField-listingPrice {
+	font-size: 35px;
+	top: 295px;
+}
+
+// Details:
+#IDX-detailsBankRateTool,
+#IDX-basicInfo {
+	font-size: 14px;
+	line-height: 18px;
+	top: 333px;
+}
+
+// Other:
+#IDX-listingID,
+#IDX-detailsGalleryLink {
+	font-size: 12px;
+	top: 380px;
+}
+
+// Superfluous:
+#IDX-detailsPriceLabel { display: none; }
+
+// Do something with sharing icons:
+.IDX-shareThisContainer {
+	position: absolute;
+	right: -345px;
+	top: -125px;
+	z-index: 200;
+}
+
+//----------------------------------------------------------------------
+// Detail navigation:
+//----------------------------------------------------------------------
+
+#IDX-detailsLinks {
+	border: {
+		width: 0 1px 1px;
+		style: solid;
+		color: darken($color1, 30%);
+	}
+}
+
+#IDX-detailsLinks-list {
+	
+	font-size: 13px;
+	letter-spacing: .02em;
+	text-align: center;
+	background: lighten($color1, 30%);
+	border: 0;
+	margin: 0;
+	padding: 0;
+	//overflow: hidden; // Using overflow for quick float clearing.
+	clear: none;
+	
+	li {
+		width: auto;
+		margin: 0 5px;
+		display: inline-block;
+		//display: block;
+		//float: left;
+	}
+	
+	a {
+		
+		display: block;
+		//padding: 5px 10px;
+		padding: 5px 0 6px; // A tad more on bottom for aesthetics.
+		-webkit-transition: color 150ms linear, box-shadow 200ms linear;
+		   -moz-transition: color 150ms linear, box-shadow 200ms linear;
+		    -ms-transition: color 150ms linear, box-shadow 200ms linear;
+		     -o-transition: color 150ms linear, box-shadow 200ms linear;
+		        transition: color 150ms linear, box-shadow 200ms linear;
+		
+		&,
+		&:link,
+		&:visited { color: rgba($raven, .75); }
+		&:visited:hover,
+		&:focus,
+		&:focus:hover,
+		&:hover,
+		&:active {
+			color: darken($color2, 20%);
+			text-decoration: none;
+			box-shadow: inset 0 -3px 0 $color2;
+		}
+		
+	}
+	
+}
+
+//----------------------------------------------------------------------
+// Remarks box:
+//----------------------------------------------------------------------
+
+#IDX-remarksContainer {
+	
+	// Get that border:
+	@extend #IDX-detailsLinks;
+	
+	color: rgba($milk, .8);
+	background: linear-gradient(to bottom, rgba(darken($color1, 25%), .9) 0, darken($color1, 15%) 5px);
+	margin: 0;
+	padding: 10px 15px;
+	//border-radius: 0 0 3px 3px;
+	
+	#IDX-propertyRemarks { // This should be paragraph text.
+		font-size: 14px;
+		line-height: 20px;
+		letter-spacing: .06em;
+		text-shadow: 0 1px 1px darken($color1, 30%);
+	}
+	
+	// It's already clear that this is a description, so hide the label:
+	.IDX-fieldContainerTitle { display: none; }
+	
+	a {
+		
+		&,
+		&:link,
+		&:visited,
+		&:visited:hover,
+		&:focus,
+		&:focus:hover,
+		&:hover,
+		&:active { color: lighten($color2, 5%); }
+		
+	}
+	
+}
+
+//----------------------------------------------------------------------
+// Fielded data:
+//----------------------------------------------------------------------
+
+#IDX-fieldsWrapper {
+	
+	margin: 0 0 25px;
+	
+	.IDX-fieldContainer { float: none; } // This wasn't needed here.
+	
+	strong { color: darken($color1, 20%); }
+	
+	h3 {
+		
+		@extend %h3;
+		
+		display: none;
+		
+	}
+	
+	.IDX-fieldTwoColumn {
+		
+		.IDX-fieldContainerListLeft { padding: 0 10px 0 0; }
+		.IDX-fieldContainerListRight { padding: 0 0 0 10px; }
+		
+	}
+	
+	> :first-child {
+		
+		// Override `display` from above:
+		display: block;
+		
+		h3 {
+			
+			// Hide what's there (goal is to simplify overall verbiage of page):
+			text-indent: -9999px;
+			line-height: 0;
+			margin: 0 0 10px;
+			display: block;
+			
+			&::after {
+				content: "Features";
+				text-indent: 0;
+				display: block;
+				line-height: initial; // New content takes up original `line-height`.
+			}
+			
+		}
+		
+	}
+	
+	.IDX-fieldContainerList div {
+		font-size: 14px;
+		line-height: 16px;
+		margin-bottom: 5px;
+	}
+	
+}
+
+//----------------------------------------------------------------------
+// Map:
+//----------------------------------------------------------------------
+
+#IDX-detailsMap {
+	
+	min-height: none;
+	min-width: none;
+	height: auto;
+	width: auto;
+	margin-bottom: 25px;
+	clear: none;
+	
+	h3 { display: none; }
+	
+	&::before {
+		
+		@extend %h3;
+		
+		content: "Location";
+		display: block;
+	}
+	
+	#IDX-map {
+		border: 1px solid darken($color1, 30%);
+		height: 300px;
+	}
+	
+	+ br.clear { display: none; }
+	
+}
+
+//----------------------------------------------------------------------
+// Random empty `div`:
+//----------------------------------------------------------------------
+
+#IDX-detailsWrapper + div:empty { display: none !important; }
+
+//----------------------------------------------------------------------
+// Contact form:
+//----------------------------------------------------------------------
+
+#IDX-detailsContactForm {
+	
+	margin: 0 0 25px;
+	
+	&,
+	& * {
+		-webkit-box-sizing: border-box;
+		   -moz-box-sizing: border-box;
+		        box-sizing: border-box;
+	}
+	
+	.IDX-customRegistrationFields { width: 50%; }
+	
+	.IDX-control-group {
+		margin: 0 0 10px;
+		display: block;
+	}
+	
+	#IDX-detailscontactFormText,
+	br.IDX-clear { display: none; }
+	
+	#IDX-message-group {
+		display: block;
+		margin-bottom: 0;
+	}
+	
+	#IDX-detailscontactContent {
+		
+		position: relative;
+		
+		.IDX-contactFormRight {
+			font-size: 14px;
+			line-height: 22px;
+			background: rgba($color1, .2);
+			border-radius: 3px;
+			padding: 20px;
+			position: absolute;
+			top: 1em; // Align with `input`, not `label`.
+			right: 0;
+			z-index: 10;
+		}
+		
+	}
+	
+	// Center the buttons:
+	//#IDX-detailscontactFormActions { text-align: center; }
+	
+	h2 { @extend %h3; }
+	
+	input[type="text"],
+	textarea { @extend %fields; }
+	
+	textarea {
+		width: 100%;
+		height: 250px;
+		display: block;
+		margin: 0;
+	}
+	
+	button {
+		
+		@extend %button;
+		
+		margin-bottom: 0;
+		width: 25%;
+		display: inline-block;
+		
+		// Hide what's there (goal is to simplify overall verbiage of page):
+		text-indent: -9999px;
+		line-height: 0;
+		
+		&::after {
+			text-indent: 0;
+			display: block;
+			line-height: initial; // New content takes up original `line-height`.
+		}
+		
+		&#IDX-submitBtn::after { content: "Submit"; }
+		
+		&#IDX-resetBtn::after { content: "Reset"; }
+		
+	}
+	
+}
+
+//----------------------------------------------------------------------
+// Contact information:
+//----------------------------------------------------------------------
+
+#IDX-contactInformation {
+	
+	// This header didn't have any UX value:
+	.IDX-contactAccountHeader { display: none; }
+	
+}
+
+//----------------------------------------------------------------------
+// Powered-by:
+//----------------------------------------------------------------------
+
+#IDX-detailsContactForm + div {
+	
+	color: lighten($color1, 10%);
+	margin-bottom: 25px;
+	padding: 0 !important;
+	
+	a {
+		text-indent: -999em;
+		white-space: nowrap;
+		overflow: hidden;
+		width: 75px;
+		height: 28px;
+		margin: 5px auto 0;
+		background: {
+			image: url(../../images/idx.png);
+			repeat: no-repeat;
+			size: cover;
+		}
+		display: block;
+	}
+	
+}
+
+//----------------------------------------------------------------------
+// Cruft:
+//----------------------------------------------------------------------
+
+.entry-footer,
+#IDX-main + img { display: none; }
+
+//----------------------------------------------------------------------
+// Sidebar:
+//----------------------------------------------------------------------
+
+.builder-module-sidebar { padding: 20px 0; }
+
+//----------------------------------------------------------------------
+// Search box widget:
+//----------------------------------------------------------------------
+
+.widget {
+	
+	&,
+	& * {
+		-webkit-box-sizing: border-box;
+		   -moz-box-sizing: border-box;
+		        box-sizing: border-box;
+	}
+	
+	// http://csswizardry.com/2014/07/hacks-for-dealing-with-specificity/
+	&.widget.widget {
+		
+		.widget-title {
+			// font: {
+			// 	weight: normal;
+			// 	size: 18px;
+			// }
+			// letter-spacing: .03em;
+			// color: #607d8b;
+			// border-bottom: 2px solid #b0bec5;
+			// background: transparent;
+			// margin: 0 0 10px;
+			// padding: 0;
+			// box-shadow: none;
+			
+			display: none; // The purpose of this widget is self-explanatory.
+			
+		}
+		
+	}
+	
+	&.widget.widget.widget {
+		
+		background: none;
+		border: 0;
+		margin: 0 25px;
+		padding: 0;
+		box-shadow: none;
+		
+	}
+	
+	.IDX-qsFieldWrap {
+		
+		text-align: left;
+		margin: 0 0 10px;
+		padding: 0;
+		
+		// Target children 2 through 5:
+		&:nth-child(n+2):nth-child(-n+5) {
+			
+			display: inline-block;
+			width: 50%;
+			
+			// Only apply padding on right/left for even/odd children:
+			&:nth-child(even)  { padding-right: 5px; }
+			&:nth-child(odd) { padding-left: 5px; }
+			
+		}
+		
+	}
+	
+	input[type="text"] { @extend %fields; }
+	
+	.builder-module & input[type="submit"] {
+		
+		@extend %button;
+		
+		background-image: none;
+		text-shadow: none;
+		margin: 20px 0 0;
+		
+		&::after {
+			content: "Joe's Task:";
+		}
+		
+	}
+	
+}
+
+.IDX-quicksearchForm {
+	
+	> :last-child { margin-bottom: 0; }
+	
+}
+
+#IDX-quicksearch-30517 {
+	background: transparent;
+	border: 0;
+	box-shadow: none;
+	width: auto;
+}
+
+//----------------------------------------------------------------------
+// Footer:
+//----------------------------------------------------------------------
+
+.builder-module-4-outer-wrapper {
+	
+	letter-spacing: .05em;
+	background: $color1 {
+		image: linear-gradient(to bottom, $color1 0, darken($color1, 10%) 100%);
+	};
+	border: {
+		width: 3px 0 0;
+		style: solid;
+		color: darken($color1, 30%);
+		radius: 0 0 3px 3px;
+	}
+	margin: 0 0 10px !important; // Override inline style.
+	padding: 25px 0 !important; // IBID.
+	box-shadow: 0 2px 3px rgba(0, 0, 0, .25);
+	overflow: hidden;
+	position: relative;
+	
+	.widget.widget { color: rgba($milk, .75); }
+	
+	.builder-module-sidebar { padding: 0; }
+	
+	a {
+		
+		&,
+		&:link, // Redundant, but needed to override previous in cascade.
+		&:visited {
+			color: $milk;
+			text-decoration: none;
+		}
+		&:visited:hover,
+		&:focus,
+		&:focus:hover,
+		&:hover,
+		&:active {
+			color: $milk;
+			text-decoration: underline;
+		}
+		
+	}
+	
+	.textwidget {
+		
+		br { display: none; }
+		
+	}
+	
+	ul {
+		
+		&,
+		li {
+			margin: 0;
+			padding: 0;
+		}
+		
+		li {
+			list-style: none;
+		}
+		
+	}
+	
+	.cli {
+		
+		position: absolute;
+		right: 10px;
+		bottom: 10px;
+		
+		// Rogue `href`:
+		+ a { display: none; }
+		
+		img {
+			margin: 0;
+			display: block;
+		}
+		
+	}
+	
+}
+
+//----------------------------------------------------------------------
+// Meta:
+//----------------------------------------------------------------------
+
+.builder-module-5-outer-wrapper {
+	
+	color: $color1;
+	
+	a {
+		
+		&,
+		&:link,
+		&:visited {
+			color: rgba($raven, .5);
+			text-decoration: none;
+		}
+		&:visited:hover,
+		&:focus,
+		&:focus:hover,
+		&:hover,
+		&:active {
+			color: rgba($raven, .75);
+			text-decoration: underline;
+		}
+		
+	}
+	
+	> a { display: none; } // Empty, so hide it.
+	
+	.quick_loginout { display: none; }
+	
+	.builder-module-block {
+		
+		margin: 0;
+		
+		> a { display: none; } // IBID.
+		
+	}
+	
+	.builder-module-footer { padding: 0; }
+	
+	.ftlogo {
+		
+		img { display: none; }
+		
+		background: {
+			image: url(../../images/remax.png);
+			repeat: no-repeat;
+			position: right center;
+			size: cover;
+		}
+		width: 100px;
+		height: 27px;
+		float: right;
+		
+	}
+	
+	.alignleft {
+		
+		strong { text-transform: lowercase; }
+		
+	}
+	
+	.alignright { display: none; }
+	
+}

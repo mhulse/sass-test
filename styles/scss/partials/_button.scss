@@ -1,0 +1,73 @@
+%button {
+	
+	font: {
+		size: 16px;
+		weight: normal;
+	}
+	line-height: 16px;
+	text-align: center;
+	letter-spacing: .08em;
+	vertical-align: baseline;
+	display: block;
+	zoom: 1;
+	cursor: pointer;
+	color: darken($color2, 20%);
+	width: 100%;
+	background-color: $color2;
+	border: none rgba($raven, 0);
+	border-radius: 3px;
+	margin: 10px 0;
+	padding: 10px 5px;
+	box-shadow: none;
+	-webkit-tap-highlight-color: rgba($raven, 0);
+	-webkit-user-drag: none;
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	        user-select: none;
+	
+	&::-moz-focus-inner {
+		padding: 0;
+		border: 0;
+	}
+	
+	&,
+	&:visited,
+	&:visited:hover,
+	&:focus,
+	&:focus:hover,
+	&:hover,
+	&:active {
+		text-decoration: none;
+		color: lighten($color2, 50%);
+		box-shadow: none;
+	}
+	
+	&:hover,
+	&:focus {
+		background: {
+			image: linear-gradient(transparent, rgba($raven, .05) 40%,
+			                  rgba($raven, .10));
+		}
+	}
+	
+	&:focus { outline: 0; }
+	
+	&:active {
+		box-shadow: 0 0 0 2px rgba($raven, .15) inset,
+		            0 0 10px rgba($raven, .25) inset;
+	}
+	
+	&[disabled] {
+		border: none;
+		background-image: none;
+		filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+		filter: alpha(opacity=40);
+		-khtml-opacity: .40;
+		  -moz-opacity: .40;
+		       opacity: .40;
+		cursor: not-allowed;
+		box-shadow: none;
+	}
+	
+}

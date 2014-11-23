@@ -1,16 +1,204 @@
+#IDX-detailsContactForm button, .builder-module .widget input[type="submit"] {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: .08em;
+  vertical-align: baseline;
+  display: block;
+  zoom: 1;
+  cursor: pointer;
+  color: #994100;
+  width: 100%;
+  background-color: #ff6d00;
+  border: none transparent;
+  border-radius: 3px;
+  margin: 10px 0;
+  padding: 10px 5px;
+  box-shadow: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+#IDX-detailsContactForm button::-moz-focus-inner, .builder-module .widget input[type="submit"]::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+#IDX-detailsContactForm button, .builder-module .widget input[type="submit"], #IDX-detailsContactForm button:visited, .builder-module .widget input[type="submit"]:visited, #IDX-detailsContactForm button:visited:hover, .builder-module .widget input[type="submit"]:visited:hover, #IDX-detailsContactForm button:focus, .builder-module .widget input[type="submit"]:focus, #IDX-detailsContactForm button:focus:hover, .builder-module .widget input[type="submit"]:focus:hover, #IDX-detailsContactForm button:hover, .builder-module .widget input[type="submit"]:hover, #IDX-detailsContactForm button:active, .builder-module .widget input[type="submit"]:active {
+  text-decoration: none;
+  color: white;
+  box-shadow: none;
+}
+#IDX-detailsContactForm button:hover, .builder-module .widget input[type="submit"]:hover, #IDX-detailsContactForm button:focus, .builder-module .widget input[type="submit"]:focus {
+  background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.1));
+}
+#IDX-detailsContactForm button:focus, .builder-module .widget input[type="submit"]:focus {
+  outline: 0;
+}
+#IDX-detailsContactForm button:active, .builder-module .widget input[type="submit"]:active {
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.15) inset, 0 0 10px rgba(0, 0, 0, 0.25) inset;
+}
+#IDX-detailsContactForm button[disabled], .builder-module .widget input[disabled][type="submit"] {
+  border: none;
+  background-image: none;
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  filter: alpha(opacity=40);
+  -khtml-opacity: .40;
+  -moz-opacity: .40;
+  opacity: .40;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+#IDX-detailsContactForm input[type="text"],
+#IDX-detailsContactForm textarea, .widget input[type="text"] {
+  vertical-align: baseline;
+  padding: 5px 10px;
+  color: #666;
+  letter-spacing: .05em;
+  text-align: left;
+  border: 1px solid #99aeb8;
+  background: #eaeaea;
+  width: 100%;
+  display: block;
+  box-shadow: inset 0 1px 3px #ccc;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0;
+  -webkit-transition: .3s linear border;
+  transition: .3s linear border;
+  -webkit-background-clip: padding;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+}
+#IDX-detailsContactForm input[type="text"]::-webkit-input-placeholder,
+#IDX-detailsContactForm textarea::-webkit-input-placeholder, .widget input[type="text"]::-webkit-input-placeholder {
+  text-align: left;
+  color: #999;
+}
+#IDX-detailsContactForm input[type="text"]:-moz-placeholder,
+#IDX-detailsContactForm textarea:-moz-placeholder, .widget input[type="text"]:-moz-placeholder {
+  text-align: left;
+  color: #999;
+}
+#IDX-detailsContactForm input[type="text"]::-moz-placeholder,
+#IDX-detailsContactForm textarea::-moz-placeholder, .widget input[type="text"]::-moz-placeholder {
+  text-align: left;
+  color: #999;
+}
+#IDX-detailsContactForm input[type="text"]:-ms-input-placeholder,
+#IDX-detailsContactForm textarea:-ms-input-placeholder, .widget input[type="text"]:-ms-input-placeholder {
+  text-align: left;
+  color: #999;
+}
+#IDX-detailsContactForm input[type="text"]:focus,
+#IDX-detailsContactForm textarea:focus, .widget input[type="text"]:focus, #IDX-detailsContactForm input[type="text"]:active,
+#IDX-detailsContactForm textarea:active, .widget input[type="text"]:active {
+  outline: 0;
+}
+#IDX-detailsContactForm input[type="text"]:focus,
+#IDX-detailsContactForm textarea:focus, .widget input[type="text"]:focus {
+  color: #333;
+  border-color: #607d8b;
+}
+#IDX-detailsContactForm input[disabled][type="text"],
+#IDX-detailsContactForm textarea[disabled], .widget input[disabled][type="text"] {
+  cursor: not-allowed;
+  background: #eee;
+  color: #ccc;
+}
+#IDX-detailsContactForm input[readonly][type="text"],
+#IDX-detailsContactForm textarea[readonly], .widget input[readonly][type="text"] {
+  background: #eee;
+  color: #777;
+  border-color: #ccc;
+}
+
+form label {
+  font-size: 14px;
+  font-weight: normal;
+  letter-spacing: .05em;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.5);
+  text-align: left !important;
+  margin: 0 0 5px !important;
+  display: block;
+  vertical-align: middle;
+}
+form select,
+form input {
+  font-size: 16px;
+  width: 100%;
+  margin: 0;
+}
+form select {
+  font-size: 16px;
+  color: #666;
+  vertical-align: baseline;
+  border: 1px solid #99aeb8;
+  background: #eaeaea;
+  width: 100%;
+  padding: 5px 10px;
+}
+form select:focus, form select:active {
+  outline: 0;
+}
+form select:focus {
+  color: #333;
+  border-color: #607d8b;
+}
+
+#IDX-fieldsWrapper h3, #IDX-detailsMap::before, #IDX-detailsContactForm h2 {
+  font-size: 20px;
+  line-height: 22px;
+  font-weight: normal;
+  letter-spacing: .03em;
+  color: #607d8b;
+  margin: 0 0 10px;
+  padding: 0;
+}
+
 body {
-  background: #eceff1;
+  background: #d5dee2;
+  background-image: linear-gradient(to bottom, #f3f6f7 120px, #99aeb8 120px, #99aeb8 160px, transparent 150px);
+  background-repeat: no-repeat;
+  color: rgba(0, 0, 0, 0.75);
+}
+
+a, a:link, a:visited {
+  color: #ff6d00;
+  text-decoration: none;
+}
+a:visited:hover, a:focus, a:focus:hover, a:hover, a:active {
+  color: #ff6d00;
+  text-decoration: underline;
 }
 
 .builder-container-outer-wrapper {
   border: 0;
-  box-shadow: none;
   background: none;
   margin: 25px auto;
+  box-shadow: none;
+}
+
+.builder-module-outer-wrapper + a {
+  display: none;
 }
 
 .builder-module {
   background: none;
+}
+
+.loop,
+.builder-module-content .hentry {
+  margin: 0;
 }
 
 .builder-module-header .site-title a {
@@ -18,19 +206,12 @@ body {
   line-height: 1;
   text-transform: lowercase;
   letter-spacing: .03em;
-  color: #546e7a;
+  color: #212c31;
 }
-
-.builder-module-header .site-title a,
-.builder-module-header .site-title a:visited {
+.builder-module-header .site-title a, .builder-module-header .site-title a:visited {
   text-decoration: none;
 }
-
-.builder-module-header .site-title a:visited:hover,
-.builder-module-header .site-title a:focus,
-.builder-module-header .site-title a:focus:hover,
-.builder-module-header .site-title a:hover,
-.builder-module-header .site-title a:active {
+.builder-module-header .site-title a:visited:hover, .builder-module-header .site-title a:focus, .builder-module-header .site-title a:focus:hover, .builder-module-header .site-title a:hover, .builder-module-header .site-title a:active {
   color: #263238;
 }
 
@@ -40,50 +221,40 @@ body {
   letter-spacing: .05em;
   margin-top: 3px;
 }
-
-.site-tagline a,
-.site-tagline a:visited {
-  color: rgba(0, 0, 0, 0.54);
+.site-tagline a, .site-tagline a:visited {
   text-decoration: none;
+  color: rgba(0, 0, 0, 0.54);
 }
-
-.site-tagline a:visited:hover,
-.site-tagline a:focus,
-.site-tagline a:focus:hover,
-.site-tagline a:hover,
-.site-tagline a:active {
-  color: #000;
+.site-tagline a:visited:hover, .site-tagline a:focus, .site-tagline a:focus:hover, .site-tagline a:hover, .site-tagline a:active {
   font-size: inherit;
   line-height: inherit;
+  color: #000;
 }
 
 .builder-module-before-navigation .builder-module-block {
   margin: 0 0 25px;
 }
 
-.builder-module-navigation:before,
-.builder-module-navigation:after {
+.builder-module-navigation {
+  border-width: 0 0 3px;
+  border-style: solid;
+  border-color: #212c31;
+  border-radius: 3px 3px 0 0;
+  background: #607d8b;
+  background: linear-gradient(to bottom, #607d8b 0, #566f7c 100%);
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+}
+.builder-module-navigation::before, .builder-module-navigation::after {
   border: none;
   border-radius: 0;
 }
-
-.builder-module-navigation {
-  margin: 0 !important;
-  padding: 0 !important;
-  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.25);
-  border-width: 0 0 3px;
-  border-style: solid;
-  border-color: #455a64;
-  border-radius: 0;
-  background: #607d8b;
-  background: linear-gradient(to bottom, #78909c 0, #607d8b 100%);
-  overflow: hidden;
-}
-
 .builder-module-navigation ul.menu > li {
   border: 0;
 }
-
 .builder-module-navigation ul.menu > li a {
   font-size: 16px;
   font-weight: normal;
@@ -91,70 +262,449 @@ body {
   text-shadow: 0 1px 1px #37474f;
   color: rgba(255, 255, 255, 0.8);
   border: 0;
-  box-shadow: none;
-  background: linear-gradient(to top, #546e7a 0, #607d8b 50%, transparent 50%);
+  background: linear-gradient(to top, #41545e 0, #4b626d 50%, transparent 50%);
   background-size: 100% 200%;
   padding: 5px 15px;
+  box-shadow: none;
   -webkit-transition: background-position 150ms ease-in, color 250ms linear;
   -moz-transition: background-position 150ms ease-in, color 250ms linear;
   -ms-transition: background-position 150ms ease-in, color 250ms linear;
   -o-transition: background-position 150ms ease-in, color 250ms linear;
   transition: background-position 150ms ease-in, color 250ms linear;
 }
-
-.builder-module-navigation ul.menu > li a,
-.builder-module-navigation ul.menu > li a:visited {
+.builder-module-navigation ul.menu > li a, .builder-module-navigation ul.menu > li a:visited {
   text-decoration: none;
 }
-
-.builder-module-navigation ul.menu > li a:visited:hover,
-.builder-module-navigation ul.menu > li a:focus,
-.builder-module-navigation ul.menu > li a:focus:hover,
-.builder-module-navigation ul.menu > li a:hover,
-.builder-module-navigation ul.menu > li a:active {
+.builder-module-navigation ul.menu > li a:visited:hover, .builder-module-navigation ul.menu > li a:focus, .builder-module-navigation ul.menu > li a:focus:hover, .builder-module-navigation ul.menu > li a:hover, .builder-module-navigation ul.menu > li a:active {
   color: #fff;
   background-position: 0 100%;
   background-color: transparent;
 }
 
+.builder-module-outer-wrapper {
+  overflow: visible !important;
+}
+
 .builder-module-middle-outer-wrapper {
   background: #fff;
-  background-image: linear-gradient(to left, #cfd8dc 320px, transparent 320px);
+  background-image: linear-gradient(to left, #b7c6cd 320px, transparent 320px);
+}
+
+.entry-content {
+  margin: 0;
+}
+
+.builder-module-content .builder-module-element {
+  overflow: visible;
+}
+
+#IDX-details-row-content {
+  margin-bottom: 25px;
+}
+#IDX-details-row-content, #IDX-details-row-content * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 #IDX-lineBreak-detailsTopNav {
   display: none;
 }
 
-.builder-module-sidebar {
-  padding: 25px 0;
+#IDX-detailsWrapper {
+  position: relative;
+}
+#IDX-detailsWrapper .IDX-fieldContainer {
+  float: none;
 }
 
-.widget,
-.widget * {
+.IDX-topLinks .IDX-topLink {
+  display: block;
+}
+.IDX-topLinks #IDX-nextLastButtons {
+  display: none;
+}
+.IDX-topLinks #IDX-detailsLinkNew {
+  display: none;
+}
+.IDX-topLinks #IDX-detailsLinkSave {
+  margin: 0;
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  z-index: 10;
+}
+.IDX-topLinks #IDX-detailsLinkSave a,
+.IDX-topLinks #IDX-detailsLinkSave span {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  line-height: 1;
+  color: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 109, 0, 0.75);
+  padding: 3px 5px;
+  display: block;
+  border-radius: 0 0 0 3px;
+}
+.IDX-topLinks #IDX-detailsLinkSave a, .IDX-topLinks #IDX-detailsLinkSave a:link, .IDX-topLinks #IDX-detailsLinkSave a:visited, .IDX-topLinks #IDX-detailsLinkSave a:visited:hover, .IDX-topLinks #IDX-detailsLinkSave a:focus, .IDX-topLinks #IDX-detailsLinkSave a:focus:hover, .IDX-topLinks #IDX-detailsLinkSave a:hover, .IDX-topLinks #IDX-detailsLinkSave a:active {
+  text-decoration: none;
+}
+.IDX-topLinks .IDX-clear {
+  display: none;
+}
+
+#IDX-detailsPropertyPhoto {
+  border: 1px solid #212c31;
+  width: 100%;
+  margin: 0;
+  float: none;
+}
+
+#IDX-primaryPhoto {
+  position: relative;
+}
+#IDX-primaryPhoto:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(to top, rgba(33, 44, 49, 0.9) 0, transparent 50%);
+  pointer-events: none;
+}
+
+#IDX-detailsPhoto {
+  display: block;
+}
+
+#IDX-detailsAddress,
+#IDX-detailsField-listingPrice,
+#IDX-basicInfo,
+#IDX-detailsBankRateTool,
+#IDX-listingID,
+#IDX-detailsGalleryLink {
+  font-weight: normal;
+  text-align: left;
+  text-shadow: 0 1px 2px #000;
+  letter-spacing: .05em;
+  color: rgba(255, 255, 255, 0.8);
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  z-index: 20;
+}
+
+#IDX-detailsAddress,
+#IDX-basicInfo,
+#IDX-detailsGalleryLink {
+  width: 65%;
+  left: 10px;
+}
+
+#IDX-detailsField-listingPrice,
+#IDX-listingID,
+#IDX-detailsBankRateTool {
+  text-align: right;
+  width: 35%;
+  right: 10px;
+}
+
+#IDX-detailsField-listingPrice,
+#IDX-detailsAddress {
+  color: #fff;
+  font-size: 20px;
+  line-height: 22px;
+  top: 280px;
+}
+
+#IDX-detailsField-listingPrice {
+  font-size: 35px;
+  top: 295px;
+}
+
+#IDX-detailsBankRateTool,
+#IDX-basicInfo {
+  font-size: 14px;
+  line-height: 18px;
+  top: 333px;
+}
+
+#IDX-listingID,
+#IDX-detailsGalleryLink {
+  font-size: 12px;
+  top: 380px;
+}
+
+#IDX-detailsPriceLabel {
+  display: none;
+}
+
+.IDX-shareThisContainer {
+  position: absolute;
+  right: -345px;
+  top: -125px;
+  z-index: 200;
+}
+
+#IDX-detailsLinks, #IDX-remarksContainer {
+  border-width: 0 1px 1px;
+  border-style: solid;
+  border-color: #212c31;
+}
+
+#IDX-detailsLinks-list {
+  font-size: 13px;
+  letter-spacing: .02em;
+  text-align: center;
+  background: #b7c6cd;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  clear: none;
+}
+#IDX-detailsLinks-list li {
+  width: auto;
+  margin: 0 5px;
+  display: inline-block;
+}
+#IDX-detailsLinks-list a {
+  display: block;
+  padding: 5px 0 6px;
+  -webkit-transition: color 150ms linear, box-shadow 200ms linear;
+  -moz-transition: color 150ms linear, box-shadow 200ms linear;
+  -ms-transition: color 150ms linear, box-shadow 200ms linear;
+  -o-transition: color 150ms linear, box-shadow 200ms linear;
+  transition: color 150ms linear, box-shadow 200ms linear;
+}
+#IDX-detailsLinks-list a, #IDX-detailsLinks-list a:link, #IDX-detailsLinks-list a:visited {
+  color: rgba(0, 0, 0, 0.75);
+}
+#IDX-detailsLinks-list a:visited:hover, #IDX-detailsLinks-list a:focus, #IDX-detailsLinks-list a:focus:hover, #IDX-detailsLinks-list a:hover, #IDX-detailsLinks-list a:active {
+  color: #994100;
+  text-decoration: none;
+  box-shadow: inset 0 -3px 0 #ff6d00;
+}
+
+#IDX-remarksContainer {
+  color: rgba(255, 255, 255, 0.8);
+  background: linear-gradient(to bottom, rgba(44, 57, 64, 0.9) 0, #41545e 5px);
+  margin: 0;
+  padding: 10px 15px;
+}
+#IDX-remarksContainer #IDX-propertyRemarks {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: .06em;
+  text-shadow: 0 1px 1px #212c31;
+}
+#IDX-remarksContainer .IDX-fieldContainerTitle {
+  display: none;
+}
+#IDX-remarksContainer a, #IDX-remarksContainer a:link, #IDX-remarksContainer a:visited, #IDX-remarksContainer a:visited:hover, #IDX-remarksContainer a:focus, #IDX-remarksContainer a:focus:hover, #IDX-remarksContainer a:hover, #IDX-remarksContainer a:active {
+  color: #ff7c1a;
+}
+
+#IDX-fieldsWrapper {
+  margin: 0 0 25px;
+}
+#IDX-fieldsWrapper .IDX-fieldContainer {
+  float: none;
+}
+#IDX-fieldsWrapper strong {
+  color: #36474f;
+}
+#IDX-fieldsWrapper h3 {
+  display: none;
+}
+#IDX-fieldsWrapper .IDX-fieldTwoColumn .IDX-fieldContainerListLeft {
+  padding: 0 10px 0 0;
+}
+#IDX-fieldsWrapper .IDX-fieldTwoColumn .IDX-fieldContainerListRight {
+  padding: 0 0 0 10px;
+}
+#IDX-fieldsWrapper > :first-child {
+  display: block;
+}
+#IDX-fieldsWrapper > :first-child h3 {
+  text-indent: -9999px;
+  line-height: 0;
+  margin: 0 0 10px;
+  display: block;
+}
+#IDX-fieldsWrapper > :first-child h3::after {
+  content: "Features";
+  text-indent: 0;
+  display: block;
+  line-height: initial;
+}
+#IDX-fieldsWrapper .IDX-fieldContainerList div {
+  font-size: 14px;
+  line-height: 16px;
+  margin-bottom: 5px;
+}
+
+#IDX-detailsMap {
+  min-height: none;
+  min-width: none;
+  height: auto;
+  width: auto;
+  margin-bottom: 25px;
+  clear: none;
+}
+#IDX-detailsMap h3 {
+  display: none;
+}
+#IDX-detailsMap::before {
+  content: "Location";
+  display: block;
+}
+#IDX-detailsMap #IDX-map {
+  border: 1px solid #212c31;
+  height: 300px;
+}
+#IDX-detailsMap + br.clear {
+  display: none;
+}
+
+#IDX-detailsWrapper + div:empty {
+  display: none !important;
+}
+
+#IDX-detailsContactForm {
+  margin: 0 0 25px;
+}
+#IDX-detailsContactForm, #IDX-detailsContactForm * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+#IDX-detailsContactForm .IDX-customRegistrationFields {
+  width: 50%;
+}
+#IDX-detailsContactForm .IDX-control-group {
+  margin: 0 0 10px;
+  display: block;
+}
+#IDX-detailsContactForm #IDX-detailscontactFormText,
+#IDX-detailsContactForm br.IDX-clear {
+  display: none;
+}
+#IDX-detailsContactForm #IDX-message-group {
+  display: block;
+  margin-bottom: 0;
+}
+#IDX-detailsContactForm #IDX-detailscontactContent {
+  position: relative;
+}
+#IDX-detailsContactForm #IDX-detailscontactContent .IDX-contactFormRight {
+  font-size: 14px;
+  line-height: 22px;
+  background: rgba(96, 125, 139, 0.2);
+  border-radius: 3px;
+  padding: 20px;
+  position: absolute;
+  top: 1em;
+  right: 0;
+  z-index: 10;
+}
+#IDX-detailsContactForm textarea {
+  width: 100%;
+  height: 250px;
+  display: block;
+  margin: 0;
+}
+#IDX-detailsContactForm button {
+  margin-bottom: 0;
+  width: 25%;
+  display: inline-block;
+  text-indent: -9999px;
+  line-height: 0;
+}
+#IDX-detailsContactForm button::after {
+  text-indent: 0;
+  display: block;
+  line-height: initial;
+}
+#IDX-detailsContactForm button#IDX-submitBtn::after {
+  content: "Submit";
+}
+#IDX-detailsContactForm button#IDX-resetBtn::after {
+  content: "Reset";
+}
 
+#IDX-contactInformation .IDX-contactAccountHeader {
+  display: none;
+}
+
+#IDX-detailsContactForm + div {
+  color: #7b96a3;
+  margin-bottom: 25px;
+  padding: 0 !important;
+}
+#IDX-detailsContactForm + div a {
+  text-indent: -999em;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 75px;
+  height: 28px;
+  margin: 5px auto 0;
+  background-image: url(../../images/idx.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+}
+
+.entry-footer,
+#IDX-main + img {
+  display: none;
+}
+
+.builder-module-sidebar {
+  padding: 20px 0;
+}
+
+.widget, .widget * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.widget.widget.widget .widget-title {
+  display: none;
+}
 .widget.widget.widget.widget {
   background: none;
-  box-shadow: none;
   border: 0;
   margin: 0 25px;
   padding: 0;
-}
-
-.widget.widget.widget .widget-title {
-  font-weight: normal;
-  font-size: 20px;
-  letter-spacing: .03em;
-  color: #607d8b;
-  border-bottom: 2px solid #b0bec5;
-  background: transparent;
   box-shadow: none;
+}
+.widget .IDX-qsFieldWrap {
+  text-align: left;
   margin: 0 0 10px;
   padding: 0;
+}
+.widget .IDX-qsFieldWrap:nth-child(n+2):nth-child(-n+5) {
+  display: inline-block;
+  width: 50%;
+}
+.widget .IDX-qsFieldWrap:nth-child(n+2):nth-child(-n+5):nth-child(even) {
+  padding-right: 5px;
+}
+.widget .IDX-qsFieldWrap:nth-child(n+2):nth-child(-n+5):nth-child(odd) {
+  padding-left: 5px;
+}
+.builder-module .widget input[type="submit"] {
+  background-image: none;
+  text-shadow: none;
+  margin: 20px 0 0;
+}
+.builder-module .widget input[type="submit"]::after {
+  content: "Joe's Task:";
+}
+
+.IDX-quicksearchForm > :last-child {
+  margin-bottom: 0;
 }
 
 #IDX-quicksearch-30517 {
@@ -164,49 +714,99 @@ body {
   width: auto;
 }
 
-.widget .IDX-qsFieldWrap {
-  text-align: left;
-  margin: 0 0 10px;
+.builder-module-4-outer-wrapper {
+  letter-spacing: .05em;
+  background: #607d8b;
+  background-image: linear-gradient(to bottom, #607d8b 0, #4b626d 100%);
+  border-width: 3px 0 0;
+  border-style: solid;
+  border-color: #212c31;
+  border-radius: 0 0 3px 3px;
+  margin: 0 0 10px !important;
+  padding: 25px 0 !important;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  position: relative;
+}
+.builder-module-4-outer-wrapper .widget.widget {
+  color: rgba(255, 255, 255, 0.75);
+}
+.builder-module-4-outer-wrapper .builder-module-sidebar {
   padding: 0;
 }
-
-/* Target children 2 through 5: */
-.widget .IDX-qsFieldWrap:nth-child(n+2):nth-child(-n+5) {
-  display: inline-block;
-  width: 50%;
+.builder-module-4-outer-wrapper a, .builder-module-4-outer-wrapper a:link, .builder-module-4-outer-wrapper a:visited {
+  color: #fff;
+  text-decoration: none;
 }
-
-/* Only apply padding on right/left for even/odd children: */
-.widget .IDX-qsFieldWrap:nth-child(n+2):nth-child(-n+5):nth-child(even) {
-  padding-right: 5px;
+.builder-module-4-outer-wrapper a:visited:hover, .builder-module-4-outer-wrapper a:focus, .builder-module-4-outer-wrapper a:focus:hover, .builder-module-4-outer-wrapper a:hover, .builder-module-4-outer-wrapper a:active {
+  color: #fff;
+  text-decoration: underline;
 }
-
-.widget .IDX-qsFieldWrap:nth-child(n+2):nth-child(-n+5):nth-child(odd) {
-  padding-left: 5px;
+.builder-module-4-outer-wrapper .textwidget br {
+  display: none;
 }
-
-.widget label {
-  font-size: 14px;
-  font-weight: normal;
-  letter-spacing: .05em;
-  line-height: 1;
-  color: #78909c;
-  text-align: left !important;
-  margin: 0 0 3px !important;
+.builder-module-4-outer-wrapper ul,
+.builder-module-4-outer-wrapper ul li {
+  margin: 0;
+  padding: 0;
+}
+.builder-module-4-outer-wrapper ul li {
+  list-style: none;
+}
+.builder-module-4-outer-wrapper .cli {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
+.builder-module-4-outer-wrapper .cli + a {
+  display: none;
+}
+.builder-module-4-outer-wrapper .cli img {
+  margin: 0;
   display: block;
 }
 
-.widget label::after {
-  content: ':';
+.builder-module-5-outer-wrapper {
+  color: #607d8b;
 }
-
-.widget select,
-.widget input {
-  font-size: 16px;
-  width: 100%;
+.builder-module-5-outer-wrapper a, .builder-module-5-outer-wrapper a:link, .builder-module-5-outer-wrapper a:visited {
+  color: rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+}
+.builder-module-5-outer-wrapper a:visited:hover, .builder-module-5-outer-wrapper a:focus, .builder-module-5-outer-wrapper a:focus:hover, .builder-module-5-outer-wrapper a:hover, .builder-module-5-outer-wrapper a:active {
+  color: rgba(0, 0, 0, 0.75);
+  text-decoration: underline;
+}
+.builder-module-5-outer-wrapper > a {
+  display: none;
+}
+.builder-module-5-outer-wrapper .quick_loginout {
+  display: none;
+}
+.builder-module-5-outer-wrapper .builder-module-block {
   margin: 0;
 }
-
-.widget input {
-  padding: 10px 15px;
+.builder-module-5-outer-wrapper .builder-module-block > a {
+  display: none;
+}
+.builder-module-5-outer-wrapper .builder-module-footer {
+  padding: 0;
+}
+.builder-module-5-outer-wrapper .ftlogo {
+  background-image: url(../../images/remax.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: cover;
+  width: 100px;
+  height: 27px;
+  float: right;
+}
+.builder-module-5-outer-wrapper .ftlogo img {
+  display: none;
+}
+.builder-module-5-outer-wrapper .alignleft strong {
+  text-transform: lowercase;
+}
+.builder-module-5-outer-wrapper .alignright {
+  display: none;
 }
