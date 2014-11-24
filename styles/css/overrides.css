@@ -714,6 +714,7 @@ a:visited:hover, a:focus, a:focus:hover, a:hover, a:active {
   margin: 0 25px;
   padding: 0;
   box-shadow: none;
+  filter: none;
 }
 .widget .IDX-qsFieldWrap {
   text-align: left;

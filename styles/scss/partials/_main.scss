@@ -830,13 +830,12 @@ a {
 	}
 	
 	&.widget.widget.widget {
-		
 		background: none;
 		border: 0;
 		margin: 0 25px;
 		padding: 0;
 		box-shadow: none;
-		
+		filter: none;
 	}
 	
 	.IDX-qsFieldWrap {
