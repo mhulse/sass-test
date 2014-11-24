@@ -324,7 +324,7 @@ a {
 		right: 0;
 		bottom: 0;
 		left: 0;
-		background: rgba(darken($color1, 30%), .9);
+		background: rgba(darken($color1, 10%), .9);
 		background: linear-gradient(to top, rgba(darken($color1, 30%), .9) 0, transparent 50%);
 		//opacity: .6;
 		pointer-events: none
