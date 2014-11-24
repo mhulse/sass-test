@@ -147,6 +147,7 @@ a {
 	
 	&::before,
 	&::after {
+		content: none; // This shold remove pseudo elements.
 		border: none {
 			radius: 0;
 		}
