@@ -16,7 +16,7 @@ $ bundle exec sass --watch styles/scss:styles/css --style expanded --scss --trac
 
 ## Browsers
 
-### MAC (Yosemite `10.10.1`):
+### MAC (Yosemite):
 
 * Firefox `33.1.1`
 * Chrome `38.0.2125.122`
@@ -25,7 +25,7 @@ $ bundle exec sass --watch styles/scss:styles/css --style expanded --scss --trac
 
 ### PC:
 
-* Firefox 
+* IE `9`, Windows 7
 
 ## Notes
 

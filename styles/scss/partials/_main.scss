@@ -476,6 +476,7 @@ a {
 	@extend #IDX-detailsLinks;
 	
 	color: rgba($milk, .8);
+	background: rgba(darken($color1, 25%), .9);
 	background: linear-gradient(to bottom, rgba(darken($color1, 25%), .9) 0, darken($color1, 15%) 5px);
 	margin: 0;
 	padding: 10px 15px;
