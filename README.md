@@ -25,11 +25,13 @@ $ bundle exec sass --watch styles/scss:styles/css --style expanded --scss --trac
 
 ### PC:
 
-* IE `9`, Windows 7
+* IE `8`, Windows 7
+* IE `9`, Windows 7 (needs fine-tuning)
+* IE `10`, Windows 8
 
 ## Notes
 
-* Advanced search link under `submit` button of the “quick search” sidebar area.
+* Would like to put an “Advanced search” link under `submit` button of the “quick search” sidebar area.
 * Combined “Basic Features” and “Advanced Features” headings into one heading named “Features”.
 * Contact form “Reste” button minimized.
 * Removed extraneous verbiage.
