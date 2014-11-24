@@ -5,13 +5,22 @@
 body {
 	// Spice it up a little:
 	background: lighten($color1, 40%) {
-		image: linear-gradient(to bottom,
-			lighten($color1, 50%) 120px,
-			lighten($color1, 20%) 120px,
-			lighten($color1, 20%) 160px,
-			transparent 150px
-		);
-		repeat: no-repeat;
+		image:
+			linear-gradient(to bottom,
+				lighten($color1, 50%) 0,
+				lighten($color1, 50%) 120px
+			),
+			linear-gradient(to bottom,
+				lighten($color1, 20%) 0,
+				lighten($color1, 20%) 120px
+			);
+		size:
+			100px 120px,
+			100px 120px;
+		position:
+			0 0,
+			0 120px;
+		repeat: repeat-x;
 	}
 	color: rgba($raven, .75);
 }
@@ -657,13 +666,58 @@ a {
 		margin: 0;
 	}
 	
-	button {
+	button { display: inline-block; }
+	
+	// Make submit button "pretty":
+	button[type="submit"] {
 		
 		@extend %button;
 		
-		margin-bottom: 0;
+		margin: {
+			right: 10px;
+			bottom: 0;
+		}
 		width: 25%;
 		display: inline-block;
+		
+	}
+	
+	// Make the reset button look like a normal link:
+	button[type="reset"] {
+		
+		background: none;
+		border: none;
+		font: inherit;
+		margin: 0;
+		padding: 0;
+		outline: none;
+		outline-offset: 0;
+		cursor: pointer;
+		
+		&,
+		&:visited {
+			color: rgba($raven, .5);
+			text-decoration: none;
+		}
+		&:visited:hover,
+		&:focus,
+		&:focus:hover,
+		&:hover,
+		&:active {
+			color: $raven;
+			text-decoration: underline;
+		}
+		
+		&::-moz-focus-inner {
+			border: none;
+			padding: 0;
+		}
+		
+	}
+	
+	// Remove text nodes for each:
+	button[type="submit"],
+	button[type="reset"] {
 		
 		// Hide what's there (goal is to simplify overall verbiage of page):
 		text-indent: -9999px;
@@ -674,6 +728,11 @@ a {
 			display: block;
 			line-height: initial; // New content takes up original `line-height`.
 		}
+		
+	}
+	
+	// Assign new text nodes:
+	button {
 		
 		&#IDX-submitBtn::after { content: "Submit"; }
 		
@@ -786,7 +845,7 @@ a {
 		padding: 0;
 		
 		// Target children 2 through 5:
-		&:nth-child(n+2):nth-child(-n+5) {
+		&:nth-of-type(n+2):nth-of-type(-n+5) { // http://stackoverflow.com/a/17312173/922323
 			
 			display: inline-block;
 			width: 50%;
@@ -808,10 +867,6 @@ a {
 		background-image: none;
 		text-shadow: none;
 		margin: 20px 0 0;
-		
-		&::after {
-			content: "Joe's Task:";
-		}
 		
 	}
 	
@@ -920,6 +975,7 @@ a {
 .builder-module-5-outer-wrapper {
 	
 	color: $color1;
+	min-height: 100px; // Some breathing room at the bottom.
 	
 	a {
 		

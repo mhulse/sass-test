@@ -1,7 +1,8 @@
 %fields {
 	
+	font-size: 16px;
 	vertical-align: baseline;
-	padding: 5px 10px;
+	padding: 5px;
 	color: $gray6;
 	letter-spacing: .05em;
 	text-align: left;
@@ -18,8 +19,8 @@
 	   -moz-appearance: none;
 	        appearance: none;
 	border-radius: 0;
-	-webkit-transition: .3s linear border;
-	        transition: .3s linear border;
+	-webkit-transition: 300ms linear border;
+	        transition: 300ms linear border;
 	-webkit-background-clip: padding;
 	   -moz-background-clip: padding;
 			background-clip: padding-box;
@@ -91,6 +92,7 @@ form {
 	}
 	
 	select {
+		
 		font-size: 16px;
 		color: $gray6;
 		vertical-align: baseline;
@@ -98,6 +100,12 @@ form {
 		background: lighten($grayd, 5%);
 		width: 100%;
 		padding: 5px 10px;
+		display: block;
+		border-radius: 0;
+		// Unfortunately, this removes the arrows from Safari:
+		// -webkit-appearance: none;
+		//    -moz-appearance: none;
+		//         appearance: none;
 		
 		&:focus,
 		&:active { outline: 0; }
