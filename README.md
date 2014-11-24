@@ -1,19 +1,3 @@
-# Sass test
-
-Testing basic Sass setup using bundler.
-
-## Development commands
-
-```bash
-$ cd sass-test/
-# Install or update gems:
-$ bundle install
-# … or:
-$ bundle update
-# Have Sass watch while you develop:
-$ bundle exec sass --watch styles/scss:styles/css --style expanded --scss --trace --sourcemap=none
-```
-
 ## Cursory browser tests
 
 <a href="https://raw.githubusercontent.com/mhulse/sass-test/gh-pages/screen.png"><img align="right" width="200" src="screen.png"></a>
@@ -39,3 +23,15 @@ $ bundle exec sass --watch styles/scss:styles/css --style expanded --scss --trac
 * IE `9`, Windows 7 (needs fine-tuning)
 * IE `10`, Windows 8
 * IE `11`, Windows 8.1
+
+## Development commands
+
+```bash
+$ cd sass-test/
+# Install or update gems:
+$ bundle install
+# … or:
+$ bundle update
+# Have Sass watch while you develop:
+$ bundle exec sass --watch styles/scss:styles/css --style expanded --scss --trace --sourcemap=none
+```
