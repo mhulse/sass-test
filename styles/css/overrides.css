@@ -123,6 +123,7 @@
 }
 
 form label {
+  text-transform: lowercase;
   font-size: 14px;
   font-weight: normal;
   letter-spacing: .05em;
@@ -132,6 +133,9 @@ form label {
   margin: 0 0 5px !important;
   display: block;
   vertical-align: middle;
+}
+form label:first-letter {
+  text-transform: uppercase;
 }
 form select,
 form input {

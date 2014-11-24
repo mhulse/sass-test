@@ -68,6 +68,7 @@ form {
 	
 	label {
 		
+		text-transform: lowercase;
 		font: {
 			size: 14px;
 			weight: normal;
@@ -81,6 +82,8 @@ form {
 		vertical-align: middle;
 		
 		//&::after { content: ':'; }
+		
+		&:first-letter { text-transform: uppercase; }
 		
 	}
 	
