@@ -25,9 +25,10 @@ $ bundle exec sass --watch styles/scss:styles/css --style expanded --scss --trac
 
 ### PC:
 
-* IE `8`, Windows 7
+* IE `8`, Windows 7 (needs more work)
 * IE `9`, Windows 7 (needs fine-tuning)
 * IE `10`, Windows 8
+* IE `11`, Windows 8.1
 
 ## Notes
 

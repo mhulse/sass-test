@@ -209,8 +209,8 @@ a {
 .builder-module-outer-wrapper { overflow: visible !important; } // The immidiate child has a clearfix on it anyway.
 
 .builder-module-middle-outer-wrapper {
-	background: #fff;
-	background: linear-gradient(to left, lighten($color1, 30%) 320px, transparent 320px);
+	background: $milk;
+	background: linear-gradient(to left, lighten($color1, 30%) 320px, $milk 320px);
 }
 
 //----------------------------------------------------------------------
@@ -810,27 +810,6 @@ a {
 	}
 	
 	// http://csswizardry.com/2014/07/hacks-for-dealing-with-specificity/
-	&.widget.widget {
-		
-		.widget-title {
-			// font: {
-			// 	weight: normal;
-			// 	size: 18px;
-			// }
-			// letter-spacing: .03em;
-			// color: #607d8b;
-			// border-bottom: 2px solid #b0bec5;
-			// background: transparent;
-			// margin: 0 0 10px;
-			// padding: 0;
-			// box-shadow: none;
-			
-			display: none; // The purpose of this widget is self-explanatory.
-			
-		}
-		
-	}
-	
 	&.widget.widget.widget {
 		background: none;
 		border: 0;
@@ -839,6 +818,8 @@ a {
 		box-shadow: none;
 		filter: none;
 	}
+	
+	&.widget.widget .widget-title { display: none; } // The purpose of this widget is self-explanatory.
 	
 	.IDX-qsFieldWrap {
 		
