@@ -1,3 +1,13 @@
+# Sass test
+
+As an experiment, and given a short amount of time, I was asked to override and improve the styles found on [this “details” page](http://direct2success.idxbroker.com/idx/details/homes/a000/M1421637/FL-Palmetto-Bay-14001-OLD-CUTLER-RD).
+
+After a bit of struggle (some of the original styles were a bit tricky to override), [here’s what I ended up with](http://mhulse.github.io/sass-test).
+
+In order to make development easier, and to have some fun, I decided to make this project an opportunity to experiment with a bundler and Sass workflow.
+
+**Note to future readers:** Just in case the above code base changes, you can [view a before/after screen shot via issue #2](https://github.com/mhulse/sass-test/issues/2).
+
 ## Cursory browser tests
 
 <a href="https://raw.githubusercontent.com/mhulse/sass-test/gh-pages/screen.png"><img align="right" width="200" src="screen.png"></a>
