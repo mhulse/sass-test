@@ -45,3 +45,63 @@ $ bundle update
 # Have Sass watch while you develop:
 $ bundle exec sass --watch styles/scss:styles/css --style expanded --scss --trace --sourcemap=none
 ```
+
+## Ruby installation notes
+
+```bash
+# Install XCODE from the App Store and then run:
+$ xcode-select --install
+# Check Ruby version:
+$ ruby -v
+$ \curl -L https://get.rvm.io | bash -s stable --ignore-dotfiles --ruby
+# --ignore-dotfiles = don't add anything to '*rc' / '*profile'.
+# If you also need a fresh version of Ruby seperate from the system
+# version you can append --ruby
+# on to the end of this command.
+```
+
+Add this to your `.bash_profile`:
+
+```bash
+# Load RVM into a shell session *as a function*:
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+```
+
+Test if everything is working:
+
+```bash
+$ type rvm | head -1
+rvm is a function # This is what you want to see.
+```
+
+Install rvm Ruby:
+
+```bash
+$ rvm install ruby --latest && rvm use current
+```
+
+From here on out, use these commands to keep things updated:
+
+```bash
+# Update rvm:
+$ rvm get stable
+# Update rvm Ruby:
+$ rvm install ruby --latest && rvm use current
+# Upgrade RubyGems:
+$ gem update --system
+# Update rvm gems:
+$ gem update
+```
+
+If using Homebrew, regularly run:
+
+```bash
+# Update brew:
+$ brew update
+# Upgrade brew packages:
+$ brew upgrade
+# Confirm everything is in working order:
+$ brew doctor
+```
+
+:)
